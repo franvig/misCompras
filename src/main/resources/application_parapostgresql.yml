@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+   
+  # Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/comprasdb
+    username: postgres
+    password: tetuan22
+  # JPA properties
+  jpa:
+    hibernate:
+      ddl-auto: update # change in first time - switch "none" at "create" , after it set at "update"
+    shoq-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: true
+    generate-ddl: true
